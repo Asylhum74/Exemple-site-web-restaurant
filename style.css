@@ -16,7 +16,7 @@ nav a {
 
 /* HEADER ACCUEIL */
 .header-home {
-    background: #c0392b;
+    background: url('./Salle.webp') center/cover;
     color: white;
     padding: 20px;
     text-align: center;
@@ -24,7 +24,7 @@ nav a {
 
 /* HEADER MENU */
 .header-menu {
-    background: url('images/fond-menu.jpg') center/cover;
+    background: #095228;
     color: white;
     padding: 60px 20px;
     text-align: center;
@@ -41,12 +41,10 @@ nav a {
 /* HERO */
 .hero {
     height: 70vh;
-    background: url('images/fond-plat.jpg') center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
     text-align: center;
 }
 
