@@ -56,6 +56,13 @@ nav a {
     border-radius: 5px;
 }
 
+/* Galerie */
+.galerie {padding:50px 20px;text-align:center;background-color:#f4f4f4;}
+.galerie h2 {margin-bottom:30px;}
+.galerie-items {display:flex;flex-wrap:wrap;justify-content:center;gap:20px;}
+.galerie-items img {width:250px;height:200px;object-fit:cover;border-radius:10px;}
+
+
 /* MENU */
 .menu-section {
     padding: 50px;
@@ -82,3 +89,12 @@ nav a {
 .contact-section textarea {
     padding: 10px;
 }
+
+/* À propos */
+.apropos-section {padding:50px 20px;text-align:center;background-color:#f4f4f4;}
+.apropos-section h2 {margin-bottom:20px;}
+.apropos-section p {max-width:800px;margin:0 auto;}
+
+
+
+
