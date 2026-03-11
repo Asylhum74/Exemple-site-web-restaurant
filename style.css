@@ -1,1 +1,86 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
+/* NAVIGATION COMMUNE */
+nav {
+    margin-top: 10px;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* HEADER ACCUEIL */
+.header-home {
+    background: #c0392b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* HEADER MENU */
+.header-menu {
+    background: url('images/fond-menu.jpg') center/cover;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* HEADER CONTACT */
+.header-contact {
+    background: #2c3e50;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+/* HERO */
+.hero {
+    height: 70vh;
+    background: url('images/fond-plat.jpg') center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.btn {
+    background: #e74c3c;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* MENU */
+.menu-section {
+    padding: 50px;
+    text-align: center;
+}
+.menu-section img {
+    max-width: 800px;
+    width: 90%;
+}
+
+/* CONTACT */
+.contact-section {
+    padding: 50px;
+    text-align: center;
+}
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+    gap: 10px;
+}
+.contact-section input,
+.contact-section textarea {
+    padding: 10px;
+}
