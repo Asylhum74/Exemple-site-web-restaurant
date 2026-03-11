@@ -91,7 +91,7 @@ nav a {
 }
 
 /* À propos */
-.apropos-section {padding:50px 20px;text-align:center;background-color:#f4f4f4;}
+.apropos-section {padding:50px 20px;text-align:center;}
 .apropos-section h2 {margin-bottom:20px;}
 .apropos-section p {max-width:800px;margin:0 auto;}
 
