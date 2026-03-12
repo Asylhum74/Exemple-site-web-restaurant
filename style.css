@@ -183,58 +183,57 @@ nav a {
 
 /* Footer */
 .footer {
-    background-color: #111;
+    background: #0f0f0f;
     color: #fff;
-    padding: 50px 20px 20px 20px;
+    padding: 25px 40px;
+    font-size: 14px;
 }
 
-.footer-container {
+.footer-main {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 40px;
-    max-width: 1200px;
-    margin: auto;
+    gap: 20px;
 }
 
-.footer-section {
-    flex: 1;
-    min-width: 250px;
+.footer-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ccc;
 }
 
-.footer-section h3 {
-    margin-bottom: 15px;
+.footer-item i {
+    color: #c59d5f; /* couleur chic restaurant */
+}
+
+.footer-socials a {
+    color: #ccc;
+    margin-left: 15px;
     font-size: 18px;
-    border-bottom: 1px solid #444;
-    padding-bottom: 5px;
+    transition: 0.3s;
 }
 
-.footer-section p {
-    margin: 8px 0;
-    font-size: 14px;
-    color: #ccc;
-}
-
-.socials span {
-    cursor: pointer;
-    color: #ccc;
-}
-
-.socials span:hover {
-    color: #fff;
+.footer-socials a:hover {
+    color: #c59d5f;
+    transform: scale(1.2);
 }
 
 .footer-bottom {
-    border-top: 1px solid #333;
-    margin-top: 40px;
+    margin-top: 20px;
     padding-top: 15px;
-    text-align: center;
-    font-size: 13px;
-    color: #aaa;
+    border-top: 1px solid #222;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #888;
+    font-size: 12px;
 }
 
 .footer-bottom a {
-    color: #aaa;
+    margin-left: 15px;
+    color: #888;
     text-decoration: none;
 }
 
