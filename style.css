@@ -113,10 +113,68 @@ nav a {
 }
 
 /* Galerie */
-.galerie {padding:50px 20px;text-align:center;background-color:#f4f4f4;}
-.galerie h2 {margin-bottom:30px;}
-.galerie-items {display:flex;flex-wrap:wrap;justify-content:center;gap:20px;}
-.galerie-items img {width:250px;height:200px;object-fit:cover;border-radius:10px;}
+.gallery {
+    padding: 80px 20px;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+.gallery h2 {
+    margin-bottom: 50px;
+    font-size: 32px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* Zoom au hover */
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Overlay */
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.gallery-overlay h3 {
+    color: white;
+    font-size: 20px;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
 
 
 /* MENU */
