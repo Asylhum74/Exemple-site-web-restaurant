@@ -17,6 +17,7 @@ nav a {
 /* HEADER ACCUEIL */
 .header-home {
     background: url('./Salle.jpg') center/cover;
+    background-attachment: fixed;
     color: white;
     padding: 20px;
     text-align: center;
