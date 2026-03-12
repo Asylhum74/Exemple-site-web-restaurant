@@ -64,6 +64,12 @@ nav a {
 
 
 /* MENU */
+.menu-home{
+    background: url('./Repas-Menu.webp') center/cover;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 .menu-section {
     padding: 50px;
     text-align: center;
