@@ -17,6 +17,7 @@ nav a {
 /* HEADER ACCUEIL */
 .header-home {
     background: url('./Salle.jpg') center/cover;
+    color: white;
     padding: 20px;
     text-align: center;
 }
@@ -65,6 +66,7 @@ nav a {
 /* MENU */
 .menu-home{
     background: url('./Repas-Menu2.jpg') center/cover;
+    color: white;
     padding: 20px;
     height: 70vh;
     text-align: center;
