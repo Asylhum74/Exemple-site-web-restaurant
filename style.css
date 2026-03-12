@@ -43,7 +43,6 @@ nav a {
     display: flex;
     justify-content: center; /* centre le titre + nav */
     align-items: center;
-    height: 120px; /* ou ce que tu veux */
 }
 /* Logo en haut à gauche */
 .logo {
