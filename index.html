@@ -105,6 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const reveals = document.querySelectorAll(".reveal");
 
     function revealOnScroll() {
+        console.log("scroll detecté");
         reveals.forEach((el) => {
             const windowHeight = window.innerHeight;
             const elementTop = el.getBoundingClientRect().top;
