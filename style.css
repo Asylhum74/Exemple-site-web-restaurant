@@ -16,7 +16,7 @@ nav a {
 
 /* HEADER ACCUEIL */
 .header-home {
-    background: url('./Repas-1.webp') center/cover;
+    background: url('./Salle.jpg') center/cover;
     color: white;
     padding: 20px;
     text-align: center;
@@ -81,7 +81,7 @@ nav a {
 
 /* MENU */
 .menu-home{
-    background: url('./Repas-2.webp') center/cover;
+    background: url('./Repas-Menu2.jpg') center/cover;
     background-attachment: fixed;
     color: white;
     padding: 20px;
@@ -90,6 +90,7 @@ nav a {
     text-align: center;
     justify-content: center; 
     align-items: center;
+    flex-direction: column;
 }
 .menu-section {
     padding: 50px;
