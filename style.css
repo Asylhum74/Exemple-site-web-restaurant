@@ -191,10 +191,15 @@ nav a {
 .footer::before {
     content: "";
     display: block;
-    width: 100px;              /* longueur de la ligne */
-    height: 2px;               /* épaisseur */
-    background: #c59d5f;       /* doré chic */
-    margin: 0 auto 30px auto;  /* centrée + espace en dessous */
+    width: 200px;
+    height: 2px;
+    margin: 0 auto 30px auto;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #c59d5f,
+        transparent
+    );
 }
 
 .footer-main {
