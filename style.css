@@ -40,6 +40,28 @@ nav a {
     position: relative;
     z-index: 2;
     color: white;
+    display: flex;
+    justify-content: center; /* centre le titre + nav */
+    align-items: center;
+    height: 120px; /* ou ce que tu veux */
+}
+/* Logo en haut à gauche */
+.logo {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 120px;
+    height: 100px;
+}
+
+/* Contenu centré */
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: white;
 }
 
 /* HEADER MENU */
