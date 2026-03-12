@@ -86,8 +86,8 @@ nav a {
     color: white;
     padding: 20px;
     height: 70vh;
+    display: flex;
     text-align: center;
-    display:flex;
     justify-content: center; 
     align-items: center;
 }
