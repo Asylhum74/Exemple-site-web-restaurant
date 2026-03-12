@@ -105,7 +105,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const reveals = document.querySelectorAll(".reveal");
 
     function revealOnScroll() {
-        console.log(el.getBoundingClientRect().top, window.innerHeight - 100);
         reveals.forEach((el) => {
             const windowHeight = window.innerHeight;
             const elementTop = el.getBoundingClientRect().top;
@@ -115,6 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 el.classList.add("active");
             }
         });
+        console.log(el.getBoundingClientRect().top, window.innerHeight - 100);
     }
 
     window.addEventListener("scroll", revealOnScroll);
