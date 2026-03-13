@@ -13,8 +13,8 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
 .center-content {display: flex; flex-direction: column; align-items: center; gap: 10px; color: white; }
 
 /* HEADER MENU */
-.header-menu {padding: 20px 20px; text-align: center; background: #0f0f0f; }
-.header-menu h1 {font-size: 20px; margin-bottom: 10px; color: white; }
+.header-menu {color: white; padding: 20px; text-align: center; background: #0f0f0f; }
+/*.header-menu h1 {font-size: 20px; margin-bottom: 10px; color: white; }*/
 .header-menu::after {content: ""; display: block; width: 80px; height: 2px; background: #c59d5f; margin: 20px auto 0 auto; }
 
 /* HEADER CONTACT */
