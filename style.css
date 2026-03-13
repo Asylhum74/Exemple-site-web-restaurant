@@ -60,6 +60,13 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     background: #c59d5f;
     border-radius: 10px;
 }
+.menu-menu{
+    display: flex;
+    text-align: center; 
+    justify-content: center;  
+    align-items: center; 
+    flex-direction: column;
+}
 
 /* CONTACT */
 .contact-section {
