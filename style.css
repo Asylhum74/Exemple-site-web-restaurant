@@ -16,7 +16,7 @@ nav a {
 
 /* HEADER ACCUEIL */
 .header-home {
-    background: url('./Salle.jpg') center/cover;
+    background: url('./image/Salle.jpg') center/cover;
     position: relative;
     color: white;
     padding: 20px;
@@ -181,7 +181,7 @@ nav a {
 
 /* MENU */
 .menu-home{
-    background: url('./Repas-Menu2.jpg') center/cover;
+    background: url('./image/Repas-Menu2.jpg') center/cover;
     background-attachment: fixed;
     position: relative;
     padding: 20px;
