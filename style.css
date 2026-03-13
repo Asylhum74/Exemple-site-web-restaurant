@@ -55,9 +55,18 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     display: block;
     width: 100px;
     height: 4px;
-    margin: 0 auto 30px auto;
+    margin: 30px auto 30px auto;
     background: #c59d5f;
     border-radius: 10px;
+}
+.menu-section img::after{
+    content: "";
+    display: block;
+    width: 500px;
+    height: 2px;
+    margin: 30px auto 30px auto;
+    background: #E4EBEB;
+    border-radius: 10px; 
 }
 
 #menu-menu {
@@ -80,6 +89,7 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     font-weight: bold;
     color: #c59d5f;
 }
+
 
 
 /* CONTACT */
