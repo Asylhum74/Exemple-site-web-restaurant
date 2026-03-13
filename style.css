@@ -50,7 +50,7 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
 .menu-section h2{
     color: #0f0f0f;
 }
-.menu-section h2::after{
+/*.menu-section h2::after{
     content: "";
     display: block;
     width: 100px;
@@ -58,6 +58,23 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     margin: 0 auto 30px auto;
     background: #c59d5f;
     border-radius: 10px;
+}*/
+.separator {
+    width: 80px;
+    height: 3px;
+    margin: 15px auto;
+    background: #c59d5f;
+    border-radius: 5px;
+}
+
+.separator::before,
+.separator::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: #c59d5f;
+    margin: 6px auto 0;
 }
 
 #menu-menu {
