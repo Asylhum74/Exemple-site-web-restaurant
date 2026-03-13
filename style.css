@@ -53,15 +53,11 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
 .menu-section h2::after{
     content: "";
     display: block;
-    width: 100px;
-    height: 10px;
+    width: 150px;
+    height: 8px;
+    padding: 20px;
     margin: 0 auto 30px auto;
-    background: linear-gradient(
-        to right,
-        transparent,
-        #0f0f0f,
-        transparent
-    );
+    color: #0f0f0f;
 }
 
 /* CONTACT */
