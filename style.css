@@ -64,14 +64,14 @@ nav a {
 
 /* HEADER MENU */
 .header-menu {
-    padding: 100px 20px;
+    padding: 20px 20px;
     text-align: center;
-    background: #f8f8f8;
+    background: #1A5E1F;
 }
 
 .header-menu h1 {
-    font-size: 42px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .header-menu::after {
