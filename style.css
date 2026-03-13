@@ -44,8 +44,8 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
 /* MENU */
 .menu-section {padding: 50px; text-align: center; }
 .menu-section img {
-    max-width: 800px;
-    width: 90%;
+    max-width: 500px;
+    width: 100%;
 }
 
 /* CONTACT */
