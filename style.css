@@ -53,10 +53,11 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
 .menu-section h2::after{
     content: "";
     display: block;
-    width: 150px;
+    width: 100px;
     height: 4px;
     margin: 20px auto 30px auto;
     background: #0f0f0f;
+    border-radius: 10px;
 }
 
 /* CONTACT */
