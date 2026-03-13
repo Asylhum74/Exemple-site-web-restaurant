@@ -59,7 +59,7 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     background: #c59d5f;
     border-radius: 10px;
 }
-.menu-section img::after{
+.separator{
     content: "";
     display: block;
     width: 400px;
