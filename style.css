@@ -59,7 +59,29 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     background: #c59d5f;
     border-radius: 10px;
 }
-    
+
+#menu-menu {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.menu-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.description {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #c59d5f;
+}
+
+
 /* CONTACT */
 .contact-section {
     padding: 50px;
