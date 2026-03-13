@@ -55,8 +55,7 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     display: block;
     width: 150px;
     height: 4px;
-    padding: 20px;
-    margin: 0 auto 30px auto;
+    margin: 20px auto 30px auto;
     background: #0f0f0f;
 }
 
