@@ -60,20 +60,63 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     background: #c59d5f;
     border-radius: 10px;
 }
+#menu {
+    padding: 100px 20px;
+    text-align: center;
+    background: #f8f8f8;
+}
+/* Container flex */
 #menu-menu {
     display: flex;
-    justify-content: center;   /* centre les blocs */
-    gap: 50px;                 /* espace entre les menus */
-    margin-top: 40px;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
 }
-#menu-menu div {
-    background: #f8f8f8;
-    padding: 30px;
-    border-radius: 10px;
-    width: 250px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+
+/* Carte menu */
+.menu-card {
+    background: white;
+    padding: 40px;
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    transition: 0.4s ease;
 }
+
+/* Hover élégant */
+.menu-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+}
+
+/* Titre */
+.menu-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Description */
+.description {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Ligne décorative */
+.separator {
+    width: 60px;
+    height: 2px;
+    background: #c59d5f;
+    margin: 20px auto;
+}
+
+/* Prix */
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #c59d5f;
+}
+
 
 /* CONTACT */
 .contact-section {
