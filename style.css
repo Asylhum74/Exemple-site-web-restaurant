@@ -48,7 +48,7 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     width: 100%;
 }
 .menu-section h2{
-    color: c59d5f;
+    color: #c59d5f;
 }
 .menu-section h2::after{
     content: "";
