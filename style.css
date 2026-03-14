@@ -107,8 +107,8 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     flex-direction: column;
     gap: 15px;
     max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+    /*margin-left: auto;
+    margin-right: auto;*/
 }
 
 .contact-section input,
