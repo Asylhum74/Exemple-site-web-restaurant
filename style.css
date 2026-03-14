@@ -89,10 +89,8 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     color: #c59d5f;
 }
 
-
 /* CONTACT */
 .contact-section {
-    padding: 50px;
     display: flex;
     flex-direction: row;
     align-item: center;
