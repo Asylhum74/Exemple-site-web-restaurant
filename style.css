@@ -90,10 +90,13 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
 }
 
 
-
 /* CONTACT */
 .contact-section {
     padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-item: center;
+    justify-content: center;
     text-align: center;
 }
 .contact-section form {
