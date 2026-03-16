@@ -3,6 +3,14 @@ body {margin: 0; font-family: Arial, sans-serif; }
 nav {margin-top: 10px; }
 nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
 .logo {position: absolute; left: 20px; top: 40px; transform: translateY(-50%); width: 170px; height: 150px; }
+.btn-cta-header{display: inline-block;
+    padding: 15px 35px;
+    background-color: #ADADAD;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute; right: 20px; top: 40px; transform: translateY(50%)
+}
 
 /* HEADER ACCUEIL */
 .header-home {background: url('./image/Salle.jpg') center/cover; position: relative; color: white; padding: 20px; text-align: center; height: 100vh;
