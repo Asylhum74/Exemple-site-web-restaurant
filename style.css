@@ -115,8 +115,8 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     color: #c59d5f;
 }
 .menu-section img {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;  /* coupe l’image pour remplir le cadre sans la déformer */
     border-radius: 10px;
 }
