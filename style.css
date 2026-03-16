@@ -3,7 +3,7 @@ body {margin: 0; font-family: Arial, sans-serif; }
 nav {margin-top: 10px; }
 nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
 .logo {position: absolute; left: 20px; top: 40px; transform: translateY(-50%); width: 170px; height: 150px; }
-.btn {background: #e74c3c; padding: 10px 20px; color: white; text-decoration: none; border-radius: 5px; }
+/*.btn {background: #e74c3c; padding: 10px 20px; color: white; text-decoration: none; border-radius: 5px; }*/
 
 /* HEADER ACCUEIL */
 .header-home {background: url('./image/Salle.jpg') center/cover; position: relative; color: white; padding: 20px; text-align: center; height: 100vh;
@@ -14,7 +14,6 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
 
 /* HEADER MENU */
 .header-menu {color: white; padding: 20px; text-align: center; background: #0f0f0f; }
-/*.header-menu::after {content: ""; display: block; width: 80px; height: 2px; background: #c59d5f; margin: 20px auto 0 auto; }*/
 
 /* HEADER CONTACT */
 .header-contact {background: #2c3e50; color: white; padding: 40px; text-align: center; }
@@ -80,7 +79,6 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     background-color: #e74c3c;
     color: white;
     font-weight: bold;
-    border-radius: 30px;
     text-decoration: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     opacity: 0;
