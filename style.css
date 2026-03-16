@@ -114,6 +114,13 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     font-weight: bold;
     color: #c59d5f;
 }
+.menu-section img {
+    width: 100%;        /* s’adapte à sa carte */
+    max-width: 300px;   /* pas plus large que 300px */
+    height: auto;       /* garde le ratio */
+    border-radius: 10px;
+    object-fit: cover;  /* remplit le cadre sans déformer */
+}
 
 /* CONTACT */
 .contact-container {
