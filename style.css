@@ -75,7 +75,7 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
 /* Texte titre + description */
 .hero-title {
     font-size: 2.5rem;
-    color: #c59d5f; /* doré pour le titre */
+    color: rgba(255, 255, 255, 0.9);
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1s ease, transform 1s ease;
@@ -97,7 +97,6 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     background-color: #e74c3c;
     color: white;
     font-weight: bold;
-    border-radius: 30px;
     text-decoration: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     opacity: 0;
