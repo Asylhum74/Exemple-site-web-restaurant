@@ -114,11 +114,19 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     font-weight: bold;
     color: #c59d5f;
 }
-.menu-section img {
+.menu-image img {
     width: 300px;
     height: 300px;
-    object-fit: cover;  /* coupe l’image pour remplir le cadre sans la déformer */
+    object-fit: cover;
     border-radius: 10px;
+    display: block;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+    opacity: 0;           /* invisible au départ */
+    transform: scale(0.8) rotate(-3deg); /* petite rotation et zoom */
+}
+.menu-image.visible img {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
 }
 .menu-section img:hover {transform: scale(1.03); box-shadow: 0 15px 40px rgba(0,0,0,0.2); }
 .menu-image {
