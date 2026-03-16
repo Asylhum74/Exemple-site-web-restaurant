@@ -163,25 +163,22 @@
 </footer>
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+const menuItems = document.querySelectorAll('.menu-item');
 
-    const reveals = document.querySelectorAll(".reveal");
+function handleScroll() {
+    const triggerBottom = window.innerHeight * 0.85;
 
-    function revealOnScroll() {
-        reveals.forEach((el) => {
-            const windowHeight = window.innerHeight;
-            const elementTop = el.getBoundingClientRect().top;
-            const revealPoint = 100;
+    menuItems.forEach((item, index) => {
+        if (item.getBoundingClientRect().top < triggerBottom) {
+            setTimeout(() => {
+                item.classList.add('visible');
+            }, index * 150); // 150ms entre chaque image
+        }
+    });
+}
 
-            if (elementTop < windowHeight - revealPoint) {
-                el.classList.add("active");
-            }
-        });
-    }
-
-    window.addEventListener("scroll", revealOnScroll);
-    revealOnScroll(); // important pour les éléments déjà visibles
-});
+window.addEventListener('scroll', handleScroll);
+window.addEventListener('load', handleScroll); // pour les items déjà visibles au chargement
 </script>
     
 </body>
