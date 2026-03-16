@@ -115,6 +115,28 @@
 </footer>
     
 <script>
+
+document.addEventListener("DOMContentLoaded", function () {
+    const heroTitle = document.querySelector(".hero-title");
+    const heroText = document.querySelector(".hero-text");
+    const heroBtn = document.querySelector(".btn-cta");
+
+    setTimeout(() => {
+        heroTitle.style.opacity = "1";
+        heroTitle.style.transform = "translateY(0)";
+    }, 200);
+
+    setTimeout(() => {
+        heroText.style.opacity = "1";
+        heroText.style.transform = "translateY(0)";
+    }, 500);
+
+    setTimeout(() => {
+        heroBtn.style.opacity = "1";
+        heroBtn.style.transform = "translateY(0)";
+    }, 800);
+}); 
+    
 document.addEventListener("DOMContentLoaded", function () {
 
     const reveals = document.querySelectorAll(".reveal");
