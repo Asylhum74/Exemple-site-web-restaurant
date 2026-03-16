@@ -134,6 +134,9 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
 }
 
 /* CONTACT */
+.contact-section {
+    padding: 50px;
+}
 .contact-container {
     display: flex;
     gap: 50px;
