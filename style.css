@@ -3,7 +3,6 @@ body {margin: 0; font-family: Arial, sans-serif; }
 nav {margin-top: 10px; }
 nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
 .logo {position: absolute; left: 20px; top: 40px; transform: translateY(-50%); width: 170px; height: 150px; }
-/*.btn {background: #e74c3c; padding: 10px 20px; color: white; text-decoration: none; border-radius: 5px; }*/
 
 /* HEADER ACCUEIL */
 .header-home {background: url('./image/Salle.jpg') center/cover; position: relative; color: white; padding: 20px; text-align: center; height: 100vh;
@@ -76,7 +75,7 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
 .btn-cta {
     display: inline-block;
     padding: 15px 35px;
-    background-color: #e74c3c;
+    background-color: #0D0D0D;
     color: white;
     font-weight: bold;
     text-decoration: none;
