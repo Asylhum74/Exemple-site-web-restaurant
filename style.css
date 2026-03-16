@@ -6,10 +6,10 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
 .btn-cta-header{display: inline-block;
     padding: 15px 35px;
     background-color: #ADADAD;
-    color: black;
+    color: #242424;
     font-weight: bold;
     text-decoration: none;
-    position: absolute; right: 20px; top: 40px; transform: translateY(50%)
+    position: absolute; right: 20px; top: 20px; transform: translateY(50%)
 }
 
 /* HEADER ACCUEIL */
