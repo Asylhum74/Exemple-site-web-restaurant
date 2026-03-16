@@ -49,7 +49,7 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
 .hero {height: 50vh; display: flex; justify-content: center; align-items: center; text-align: center; flex-direction: column; }
 .hero h2 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-top: 20px;
     max-width: 800px;
 }
 
