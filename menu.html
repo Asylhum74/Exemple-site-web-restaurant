@@ -174,7 +174,7 @@ function handleScroll() {
         if (item.getBoundingClientRect().top < triggerBottom) {
             setTimeout(() => {
                 item.classList.add('visible');
-            }, index * 150); // 150ms entre chaque image
+            }, index * 1000); // 150ms entre chaque image
         }
     });
 }
