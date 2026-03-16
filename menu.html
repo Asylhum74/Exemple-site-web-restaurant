@@ -170,11 +170,10 @@ const menuItems = document.querySelectorAll('.menu-image');
 function handleScroll() {
     const triggerBottom = window.innerHeight * 0.85;
 
-    menuItems.forEach((item, index) => {
-        if (item.getBoundingClientRect().top < triggerBottom) {
-            setTimeout(() => {
-                item.classList.add('visible');
-            }, index * 1000); // 150ms entre chaque image
+    menuItems.forEach(item => {
+        const itemTop = item.getBoundingClientRect().top;
+        if (itemTop < triggerBottom) {
+            item.classList.add('visible');
         }
     });
 }
