@@ -120,6 +120,7 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     object-fit: cover;  /* coupe l’image pour remplir le cadre sans la déformer */
     border-radius: 10px;
 }
+.menu-section img:hover {transform: scale(1.03); box-shadow: 0 15px 40px rgba(0,0,0,0.2); }
 .menu-image {
     display: flex;
     gap: 20px;
