@@ -37,6 +37,13 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     font-size: 2.8rem;
     font-weight: 600;
 }
+.title-separator {
+    width: 80px;
+    height: 3px;
+    background: #c59d5f; /* doré */
+    margin: 15px auto 50px auto;
+    border-radius: 5px;
+}
 
 /* PAGE PRINCIPALE */
 .hero {height: 50vh; display: flex; justify-content: center; align-items: center; text-align: center; flex-direction: column; }
