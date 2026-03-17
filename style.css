@@ -192,11 +192,8 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     .center-content h1 {
         font-size: 0.1rem; /* titre plus petit */
     }
-    .hero h2 {
+    .hero-title {
         font-size: 0.1rem;
-    }
-    .hero p {
-        font-size: 0.95rem; /* description plus petite */
     }
 }
 
