@@ -67,12 +67,10 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
 .events-section h2::after {content: ""; display: block; width: 100px; height: 4px; margin: 15px auto 40px auto; background: #c59d5f; border-radius: 10px; }
 .events-grid {display: flex; gap: 30px;flex-wrap: nowrap; transition: transform 0.5s ease; }
 .events-wrapper {
-    display: flex;
-    overflow-x: hidden;
-    gap: 20px;
+    overflow-x: auto;
     padding: 20px;
 }
-.event-card {min-width: 300px; background: white; border-radius: 15px; flex: 0 0 300px; max-width: 90%; }
+.event-card {min-width: 300px; background: white; border-radius: 15px; flex: 0 0 300px; max-width: 100%; }
 .event-card img {width: 100%; height: 200px; object-fit: cover; border-top-left-radius: 15px; border-top-right-radius: 15px; }
 .event-card h3 {font-size: 1.2rem; margin: 15px; color: #0f0f0f; }
 .event-card p {font-size: 0.95rem; margin: 0 15px 15px 15px; color: #555; }
@@ -153,12 +151,9 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
 }
 
 @media (max-width: 600px) {
-    .events-wrapper {
-        width: 100%; /* s’adapte à l’écran */
-    }
     .event-card {
         flex: 0 0 90%;      /* une carte à la fois, mais pas trop large */
-        margin: 0 5%;       /* centrée avec un petit espace à gauche/droite */
+        margin: 0 auto;       /* centrée avec un petit espace à gauche/droite */
     }
 }
 
