@@ -151,6 +151,9 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
 }
 
 @media (max-width: 600px) {
+    .events-wrapper {
+        overflow: hidden;
+    }
     .event-card {
         flex: 0 0 90%;      /* une carte à la fois, mais pas trop large */
         margin: 0 auto;       /* centrée avec un petit espace à gauche/droite */
@@ -158,8 +161,6 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
         min-widht: 200px
 
     }
-    .events-wrapper {
-        overflow: hidden;
-    }
+
 }
 
