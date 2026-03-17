@@ -77,6 +77,13 @@
         <a href="./menu.html" class="btn-menu">Voir le Menu</a>
     </div>
 </section>
+
+<section class="events-section">
+    <h2>Nos Événements</h2>
+    <div class="events-grid">
+        <!-- Les cartes seront ajoutées ici automatiquement -->
+    </div>
+</section>
     
 <!-- Footer -->
 <footer class="footer">
@@ -139,7 +146,26 @@ document.addEventListener("DOMContentLoaded", function () {
 }); 
     
 document.addEventListener("DOMContentLoaded", function () {
+    const eventsGrid = document.querySelector(".events-grid");
 
+    fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vQRtyA7hxSS3oT_dH8_2PRI38In21lwZG6QbtD2p-ligE55tW7kS7MD8rzHaxDNG6T7QKpy53qMigHc/pubhtml?gid=0&single=true") // Remplace par ton URL Sheet2JSON
+        .then(response => response.json())
+        .then(data => {
+            data.forEach(event => {
+                const card = document.createElement("div");
+                card.classList.add("event-card", "reveal");
+                card.innerHTML = `
+                    <img src="${event.Image}" alt="${event.Titre}">
+                    <h3>${event.Titre}</h3>
+                    <p>${event.Description}</p>
+                    <span>${event.Date}</span>
+                `;
+                eventsGrid.appendChild(card);
+            });
+
+            // Lancer l'effet fade-in pour les cartes déjà visibles
+            revealOnScroll();
+        });
     const reveals = document.querySelectorAll(".reveal");
 
     function revealOnScroll() {
