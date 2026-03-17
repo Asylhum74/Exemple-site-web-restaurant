@@ -171,9 +171,9 @@ document.addEventListener("DOMContentLoaded", function () {
             });
             revealOnScroll(); // relancer animation
         });
-    const reveals = document.querySelectorAll(".reveal");
-
+    
     function revealOnScroll() {
+        const reveals = document.querySelectorAll(".reveal");
         reveals.forEach((el) => {
             const windowHeight = window.innerHeight;
             const elementTop = el.getBoundingClientRect().top;
