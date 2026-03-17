@@ -152,13 +152,12 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
 
 @media (max-width: 600px) {
     .event-card {
-        flex: 0 0 50%;      /* une carte à la fois, mais pas trop large */
-        /*margin: 0 auto;       /* centrée avec un petit espace à gauche/droite */
-        max-width: 100px;
-        min-width: 100px;
+        flex: 0 0 90%;      /* une carte à la fois, mais pas trop large */
+        margin: 0 auto;       /* centrée avec un petit espace à gauche/droite */
+
     }
     .events-wrapper {
-        overflow-x: auto;
+        overflow: hidden;
     }
 }
 
