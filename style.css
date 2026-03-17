@@ -209,12 +209,25 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     box-shadow: 0 15px 40px rgba(0,0,0,0.2);
 }
 .slider-container {
-    display: flex;
+    /*display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;*/
     position: relative;
+    width: 990px; 
+    margin: auto;
 }
 .slider-btn {
+    /*background: #c59d5f;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 50px;*/
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     background: #c59d5f;
     color: white;
     border: none;
@@ -222,9 +235,14 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     padding: 10px 15px;
     border-radius: 50%;
     cursor: pointer;
-    margin: 50px;
+}
+.slider-btn.prev {
+    left: -20px; /* décale à gauche du wrapper */
 }
 
+.slider-btn.next {
+    right: -20px; /* décale à droite du wrapper */
+}
 
 
 /* Fade-in au scroll */
