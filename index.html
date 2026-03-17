@@ -148,23 +148,28 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     const eventsGrid = document.querySelector(".events-grid");
 
-    fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vQRtyA7hxSS3oT_dH8_2PRI38In21lwZG6QbtD2p-ligE55tW7kS7MD8rzHaxDNG6T7QKpy53qMigHc/pubhtml?gid=0&single=true") // Remplace par ton URL Sheet2JSON
-        .then(response => response.json())
-        .then(data => {
-            data.forEach(event => {
+    fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vQRtyA7hxSS3oT_dH8_2PRI38In21lwZG6QbtD2p-ligE55tW7kS7MD8rzHaxDNG6T7QKpy53qMigHc/pub?gid=0&single=true&output=csv") // Remplace par ton URL Sheet2JSON
+.then(response => response.text())
+        .then(csv => {
+            const rows = csv.split("\n").slice(1); // enlève l'en-tête
+            rows.forEach(row => {
+                const cols = row.split(",");
+                const titre = cols[0];
+                const description = cols[1];
+                const date = cols[2];
+                const image = cols[3];
+                if (!titre) return; // ignore lignes vides
                 const card = document.createElement("div");
-                card.classList.add("event-card", "reveal");
+                card.classList.add("event-card", "reveal")
                 card.innerHTML = `
-                    <img src="${event.Image}" alt="${event.Titre}">
-                    <h3>${event.Titre}</h3>
-                    <p>${event.Description}</p>
-                    <span>${event.Date}</span>
+                    <img src="${image}" alt="${titre}">
+                    <h3>${titre}</h3>
+                    <p>${description}</p>
+                    <span>${date}</span>
                 `;
                 eventsGrid.appendChild(card);
             });
-
-            // Lancer l'effet fade-in pour les cartes déjà visibles
-            revealOnScroll();
+            revealOnScroll(); // relancer animation
         });
     const reveals = document.querySelectorAll(".reveal");
 
