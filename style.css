@@ -82,12 +82,12 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     width: 100%;
     max-width: 990px;
     margin: auto;
-    overflow: hidden;
+    overflow: visible;
 }
-.slider-btn {/*position: absolute; top: 50%; transform: translateY(-50%);*/ background: #c59d5f; color: white; border: none; font-size: 20px; padding: 10px 15px;
+.slider-btn {position: absolute; top: 50%; transform: translateY(-50%); background: #c59d5f; color: white; border: none; font-size: 20px; padding: 10px 15px;
     border-radius: 50%; cursor: pointer; }
-/*.slider-btn.prev {left: -50px; }
-.slider-btn.next {right: -50px; }*/
+.slider-btn.prev { left: 10px; }
+.slider-btn.next { right: 10px; }
 
 /* Fade-in au scroll */
 .reveal {opacity: 0; transform: translateY(40px); transition: 0.8s ease; }
