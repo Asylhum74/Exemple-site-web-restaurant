@@ -170,14 +170,61 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
         display: none; /* les flèches disparaissent */
     }
 }
+.header-home-content {
+    position: relative;
+    height: 100%;
+}
+
+/* Logo absolu pour desktop */
+.logo {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 170px;
+    height: 150px;
+}
+
+/* Bouton absolu pour desktop */
+.btn-cta-header {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 15px 35px;
+    background-color: #e74c3c;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Titre centré */
+.center-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+/* Media query pour mobile */
 @media (max-width: 768px) {
-    .header-home-content {
-        flex-direction: column;
-        gap: 15px;
-    }
     .logo, .btn-cta-header {
-        width: 100px;
+        position: static;  /* plus d'absolu */
+        width: 120px;
         height: auto;
+        margin: 0 auto;
+    }
+    .center-content {
+        position: static;
+        transform: none;
+        margin-top: 15px;
+    }
+    .header-home-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px;
     }
 }
 
