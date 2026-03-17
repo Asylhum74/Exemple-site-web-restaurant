@@ -4,7 +4,10 @@ body, html {margin: 0; font-family: Arial, sans-serif; }
 nav {margin-top: 10px; }
 nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
 .logo {position: absolute; left: 20px; top: 40px; transform: translateY(-50%); width: 170px; height: 150px; }
+.logo-home {position: absolute; left: 20px; top: 40px; transform: translateY(-50%); width: 170px; height: 150px; }
 .btn-cta-header{display: inline-block; padding: 15px 35px; background-color: #C4C4C4; color: #3B3B3B; font-weight: bold; text-decoration: none;
+    position: absolute; right: 20px; transform: translateY(50%) }
+.btn-cta-header-home{display: inline-block; padding: 15px 35px; background-color: #C4C4C4; color: #3B3B3B; font-weight: bold; text-decoration: none;
     position: absolute; right: 20px; transform: translateY(50%) }
 
 /* HEADER PRINCIPALE */
@@ -172,4 +175,7 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
 }
 @media (max-width: 600px) {
     .header-home {font-size: 2rem;}
+    .btn-cta-header-home{display: inline-block; padding: 5px 5px; background-color: #C4C4C4; color: #3B3B3B; font-weight: bold; text-decoration: none;
+    position: absolute; right: 20px; transform: translateY(50%); font-size: 1rem; }
+    .logo-home {position: absolute; left: 5px; top: 40px; transform: translateY(-50%); width: 50px; height: 50px; }
 }
