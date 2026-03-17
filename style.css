@@ -226,7 +226,7 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     cursor: pointer;
 }
 .slider-btn.prev {
-    left: -80px; 
+    left: 80px; 
 }
 
 .slider-btn.next {
