@@ -62,12 +62,12 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
 .menu-home-content {position: relative; z-index: 2; }
 
 /* Section Event page principale */
-.events-section {padding: 60px 20px; text-align: center; background: #f8f8f8; }
+.events-section {padding: 60px 20px; text-align: center; background: #f8f8f8; width: 100%; overflow-x: hidden; }
 .events-section h2 {font-size: 32px; margin-bottom: 50px; position: relative; }
 .events-section h2::after {content: ""; display: block; width: 100px; height: 4px; margin: 15px auto 40px auto; background: #c59d5f; border-radius: 10px; }
 .events-grid {display: flex; gap: 30px;flex-wrap: nowrap; transition: transform 0.5s ease; }
 .events-wrapper {
-    overflow-x: auto;
+    overflow-x: hidden;
     padding: 20px;
 }
 .event-card {min-width: 300px; background: white; border-radius: 15px; flex: 0 0 300px; max-width: 100%; }
@@ -154,6 +154,9 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     .event-card {
         flex: 0 0 90%;      /* une carte à la fois, mais pas trop large */
         margin: 0 auto;       /* centrée avec un petit espace à gauche/droite */
+    }
+    .events-wrapper {
+        overflow-x: auto;
     }
 }
 
