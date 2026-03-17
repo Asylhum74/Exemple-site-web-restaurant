@@ -81,7 +81,7 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     width: 100%;
     position: relative;
     max-width: 1100px;
-    margin: auto;
+    margin: auto 20px auto auto;
     padding: 0 60px; /* espace pour les flèches */
 }
 .slider-btn {position: absolute; top: 50%; transform: translateY(-50%); background: #c59d5f; color: white; border: none; font-size: 20px; padding: 10px 15px;
