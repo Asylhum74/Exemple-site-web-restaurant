@@ -5,6 +5,8 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
 .logo {position: absolute; left: 20px; top: 40px; transform: translateY(-50%); width: 170px; height: 150px; }
 .btn-cta-header{display: inline-block; padding: 15px 35px; background-color: #C4C4C4; color: #3B3B3B; font-weight: bold; text-decoration: none;
     position: absolute; right: 20px; transform: translateY(50%) }
+
+/* HEADER PRINCIPALE */
 .header-home {background: url('./image/Salle.jpg') center/cover; position: relative; color: white; padding: 20px; text-align: center; height: 100vh;
     max-height: 650px; }
 .header-home::before {content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
@@ -144,17 +146,11 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
         column-count: 1;
     }
 }
-@media (max-width: 1000px) {
+
+@media (max-width: 600px) {
     .events-wrapper {
         width: 100%; /* s’adapte à l’écran */
     }
-
-    .event-card {
-        flex: 0 0 calc((100% - 20px) / 2); /* 2 cartes visibles */
-    }
-}
-
-@media (max-width: 600px) {
     .event-card {
         flex: 0 0 100%; /* 1 carte visible */
     }
