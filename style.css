@@ -169,14 +169,6 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-
-    opacity: 0;
-    transform: translateY(40px);
-    transition: 0.8s ease;
-}
-.event-card.active {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 .event-card img {
