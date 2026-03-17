@@ -205,9 +205,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
     function updateSlider() {
-        const cardWidth = grid.querySelector('.event-card').offsetWidth + 30; // 20 = gap entre cartes
+        const card = grid.querySelector('.event-card');
+        const gap = 30;
+        const cardWidth = card.offsetWidth + gap;
+    
         grid.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
     }
+    
+    window.addEventListener('resize', updateSlider);
     
     
     function revealOnScroll() {
