@@ -190,7 +190,10 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
         width: 90%;
     }
     .center-content h1 {
-        font-size: 1.8rem; /* titre plus petit */
+        font-size: 1.2rem; /* titre plus petit */
+    }
+    .hero h2 {
+        font-size: 1.2rem;
     }
     .center-content p {
         font-size: 0.95rem; /* description plus petite */
