@@ -177,5 +177,5 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     .header-home {font-size: 2rem;}
     .btn-cta-header-home{display: inline-block; padding: 5px 5px; background-color: #C4C4C4; color: #3B3B3B; font-weight: bold; text-decoration: none;
     position: absolute; right: 20px; transform: translateY(50%); font-size: 1rem; }
-    .logo-home {position: absolute; left: 5px; top: 40px; transform: translateY(-50%); width: 50px; height: 50px; }
+    /*.logo-home {position: absolute; left: 5px; top: 40px; transform: translateY(-50%); width: 50px; height: 50px; }y*/
 }
