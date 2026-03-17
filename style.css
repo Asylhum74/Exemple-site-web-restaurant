@@ -1,5 +1,5 @@
 /* PRINCIPALE */
-body {margin: 0; font-family: Arial, sans-serif; }
+body, html {margin: 0; font-family: Arial, sans-serif; }
 nav {margin-top: 10px; }
 nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
 .logo {position: absolute; left: 20px; top: 40px; transform: translateY(-50%); width: 170px; height: 150px; }
