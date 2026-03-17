@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", function () {
             events.sort((a, b) => a.date - b.date);
             events.forEach(event => {
                 const card = document.createElement("div");
-                card.classList.add("event-card");
+                card.classList.add("event-card", "reveal");
                 card.innerHTML = `
                     <img src="${event.image}" alt="${event.titre}">
                     <h3>${event.titre}</h3>
