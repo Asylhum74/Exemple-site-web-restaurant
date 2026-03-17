@@ -159,13 +159,19 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
 }
 
 .event-card {
+    min-width: 300px;
     background: white;
     border-radius: 15px;
     overflow: hidden;
-    width: 300px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.8s ease;
+}
+.event-card.active {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .event-card img {
@@ -197,6 +203,33 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
 .event-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.slider-btn {
+    background: #c59d5f;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.events-wrapper {
+    overflow: hidden;
+    width: 1000px; /* largeur visible */
+}
+
+.events-grid {
+    display: flex;
+    gap: 30px;
+    transition: transform 0.5s ease;
 }
 
 /* Fade-in au scroll */
