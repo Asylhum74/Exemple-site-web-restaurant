@@ -167,8 +167,6 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     min-width: 300px;
     background: white;
     border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 .event-card img {
