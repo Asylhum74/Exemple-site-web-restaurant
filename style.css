@@ -68,7 +68,7 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
 .events-grid {display: flex; gap: 30px;flex-wrap: nowrap; transition: transform 0.5s ease; }
 .events-wrapper {
     display: flex;
-    overflow-x: auto;      /* scroll horizontal si plus de cartes */
+    overflow-x: hidden;
     gap: 20px;
     padding: 20px;
 }
