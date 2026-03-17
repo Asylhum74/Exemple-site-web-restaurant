@@ -160,7 +160,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const prevBtn = document.querySelector(".prev");
     const nextBtn = document.querySelector(".next");
     let currentIndex = 0;
-    //const cardWidth = 330;
 
     fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vQRtyA7hxSS3oT_dH8_2PRI38In21lwZG6QbtD2p-ligE55tW7kS7MD8rzHaxDNG6T7QKpy53qMigHc/pub?gid=0&single=true&output=csv") // Remplace par ton URL Sheet2JSON
         .then(res => res.text())
@@ -206,7 +205,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
     function updateSlider() {
-        //grid.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
         const cardWidth = grid.querySelector('.event-card').offsetWidth + 20; // 20 = gap entre cartes
         grid.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
     }
