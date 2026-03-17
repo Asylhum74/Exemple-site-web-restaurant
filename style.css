@@ -151,22 +151,20 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
 
 .events-grid {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     gap: 30px;
-    max-width: 1200px;
-    margin: auto;
+    flex-wrap: nowrap; /* interdit le passage à la ligne */
     transition: transform 0.5s ease;
 }
 .events-wrapper {
     overflow: hidden;
-    width: 1000px; /* largeur visible */
+    width: 990px; /* largeur visible */
 }
 
 .event-card {
     min-width: 300px;
     background: white;
     border-radius: 15px;
+    flex: 0 0 300px;
 }
 
 .event-card img {
@@ -451,5 +449,20 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
 @media (max-width: 600px) {
     .gallery-grid {
         column-count: 1;
+    }
+}
+@media (max-width: 1000px) {
+    .events-wrapper {
+        width: 100%; /* s’adapte à l’écran */
+    }
+
+    .event-card {
+        flex: 0 0 calc((100% - 20px) / 2); /* 2 cartes visibles */
+    }
+}
+
+@media (max-width: 600px) {
+    .event-card {
+        flex: 0 0 100%; /* 1 carte visible */
     }
 }
