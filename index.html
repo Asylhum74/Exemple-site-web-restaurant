@@ -80,8 +80,17 @@
 
 <section class="events-section">
     <h2>Nos Événements</h2>
-    <div class="events-grid">
-        <!-- Les cartes seront ajoutées ici automatiquement -->
+
+    <div class="slider-container">
+        <button class="slider-btn prev">←</button>
+
+        <div class="events-wrapper">
+            <div class="events-grid">
+                <!-- JS injecte ici -->
+            </div>
+        </div>
+
+        <button class="slider-btn next">→</button>
     </div>
 </section>
     
@@ -146,31 +155,58 @@ document.addEventListener("DOMContentLoaded", function () {
 }); 
     
 document.addEventListener("DOMContentLoaded", function () {
-    const eventsGrid = document.querySelector(".events-grid");
+    const grid = document.querySelector(".events-grid");
+    const prevBtn = document.querySelector(".prev");
+    const nextBtn = document.querySelector(".next");
+    let currentIndex = 0;
+    const cardWidth = 330;
 
     fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vQRtyA7hxSS3oT_dH8_2PRI38In21lwZG6QbtD2p-ligE55tW7kS7MD8rzHaxDNG6T7QKpy53qMigHc/pub?gid=0&single=true&output=csv") // Remplace par ton URL Sheet2JSON
-.then(response => response.text())
+        .then(res => res.text())
         .then(csv => {
-            const rows = csv.split("\n").slice(1); // enlève l'en-tête
+            const rows = csv.split("\n").slice(1);
+            let events = [];
             rows.forEach(row => {
                 const cols = row.split(",");
-                const titre = cols[0];
-                const description = cols[1];
-                const date = cols[2];
-                const image = cols[3];
-                if (!titre) return; // ignore lignes vides
-                const card = document.createElement("div");
-                card.classList.add("event-card", "reveal")
-                card.innerHTML = `
-                    <img src="${image}" alt="${titre}">
-                    <h3>${titre}</h3>
-                    <p>${description}</p>
-                    <span>${date}</span>
-                `;
-                eventsGrid.appendChild(card);
+                if (!cols[0]) return;
+                events.push({
+                    titre: cols[0],
+                    description: cols[1],
+                    date: new Date(cols[2]),
+                    dateText: cols[2],
+                    image: cols[3]
+                });
             });
-            revealOnScroll(); // relancer animation
+            events.sort((a, b) => a.date - b.date);
+            events.forEach(event => {
+                const card = document.createElement("div");
+                card.classList.add("event-card");
+                card.innerHTML = `
+                    <img src="${event.image}" alt="${event.titre}">
+                    <h3>${event.titre}</h3>
+                    <p>${event.description}</p>
+                    <span>${event.dateText}</span>
+                `;
+                grid.appendChild(card);
+            });
+            revealOnScroll();
         });
+    nextBtn.onclick = () => {
+        const maxIndex = grid.children.length - 3;
+        if (currentIndex < maxIndex) {
+            currentIndex++;
+            updateSlider();
+        }
+    };
+    prevBtn.onclick = () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateSlider();
+        }
+    };
+    function updateSlider() {
+        grid.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    }
     
     function revealOnScroll() {
         const reveals = document.querySelectorAll(".reveal");
