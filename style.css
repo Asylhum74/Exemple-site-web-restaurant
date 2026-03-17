@@ -154,6 +154,7 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     .event-card {
         flex: 0 0 90%;      /* une carte à la fois, mais pas trop large */
         margin: 0 auto;       /* centrée avec un petit espace à gauche/droite */
+        max-width: 300px
 
     }
     .events-wrapper {
