@@ -142,8 +142,8 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     .gallery-grid {column-count: 1; }
 
     .event-card {flex: 0 0 80%; }
-    .events-wrapper {overflow: hidden; overflow-x: auto; display: flex; }
-    /*.slider-btn {display: none; }*/
+    .events-wrapper {overflow: hidden;}
+    /*.slider-btn {display: none; }overflow-x: auto;*/
     
     .contact-container {flex-direction: column; }
     
