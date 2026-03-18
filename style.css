@@ -185,10 +185,8 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     .btn-cta-header {
         padding: 10px 10px;
         font-size: 0.9rem;
-        top: -2px;
-        right: -2px;
-        left: 0px;
-        bottom: 0px;
+        top: 0px;
+        right: 0px;
     }
     .center-content {
         width: 90%;
