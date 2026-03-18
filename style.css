@@ -177,18 +177,18 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     .logo {
         width: 90px;
         height: auto;
-        top: 0px;
-        left: 0px;
-        right: 10px;
-        bottom: 10px
+        top: 20px;
+        left: -20px;
+        right: 0px;
+        bottom: 0px
     }
     .btn-cta-header {
         padding: 10px 10px;
         font-size: 0.9rem;
-        top: 0px;
-        right: 0px;
-        left: 10px;
-        bottom: 10px;
+        top: 20px;
+        right: -20px;
+        left: 0px;
+        bottom: 0px;
     }
     .center-content {
         width: 90%;
