@@ -141,7 +141,7 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
 @media (max-width: 600px) {
     .gallery-grid {column-count: 1; }
 
-    .event-card {flex: 0 0 10%; }
+    .event-card {flex: 0 0 5%; }
     .events-wrapper {overflow: hidden; overflow-x: auto; display: flex; }
     .slider-btn {display: none; }
     
