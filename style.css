@@ -177,8 +177,8 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     .logo {
         width: 90px;
         height: auto;
-        top: 0px;
-        left: 0px;
+        top: 20px;
+        left: -20px;
         right: 0px;
         bottom: 0px
     }
