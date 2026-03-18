@@ -141,8 +141,9 @@ nav a {margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
 @media (max-width: 600px) {
     .gallery-grid {column-count: 1; }
 
-    .event-card {flex: 0 0 120%; }
+    .event-card {flex: 0 0 100%; }
     .events-wrapper {overflow: hidden; overflow-x: auto; }
+    .events-grid {width: 100%}
     .slider-btn {display: none; }
     
     .contact-container {flex-direction: column; }
