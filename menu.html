@@ -12,134 +12,41 @@
 </head>
 <body>
 
-<header class="header-menu">
-    <div class="header-home-content">
-        <img src="./image/Logo.png" alt="logo" class="logo">
-        <div class="center-content">
-            <h1>Restaurant Le Délice</h1>
-            <nav>
-                <a href="./index.html">Accueil</a>
-                <a href="./menu.html">Menu</a>
-                <a href="./contact.html">Contact</a>
-            </nav>
-             <a href="./contact.html" class="btn-cta-header">Réserver</a>
-        </div>
+  <!-- Header -->
+  <header>
+    <div class="logo">Bistro Méditerranéen</div>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#about">À propos</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn-reserve">Réserver</a>
+    </nav>
+  </header>
+
+ <!-- Menu -->
+  <section class="menu" id="menu">
+    <h2>Notre Menu</h2>
+    <div class="menu-cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=300&q=80" alt="Salade grecque">
+        <h3>Salade grecque</h3>
+        <p>Tomates, concombre, feta, olives noires</p>
+        <div class="price">€9</div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=300&q=80" alt="Paella">
+        <h3>Paella</h3>
+        <p>Fruits de mer frais, riz safrané</p>
+        <div class="price">€18</div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=300&q=80" alt="Tiramisu">
+        <h3>Tiramisu</h3>
+        <p>Crémeux au mascarpone et café</p>
+        <div class="price">€7</div>
+      </div>
     </div>
-</header>
-
-<section class="menu-section">
-    <div class="section-header">
-        <p class="section-subtitle">Découvrez</p>
-        <h2>Notre Menu</h2>
-        <div class="title-separator"></div>
-    </div>
-    
-    <section id="boisson">
-        <h3>Boissons</h3>
-        <h4>Mojito</h4>
-        <p class="description">Cocktail rafraîchissant à base de rhum, menthe, citron vert et sucre</p>
-        <p class="price">9,40</p>
-        <h4>Piña Colada</h4>
-        <p class="description">Cocktail tropical crémeux à base de rhum, ananas et coco</p>
-        <p class="price">17,60</p>
-        <h4>Sex on the Beach</h4>
-        <p class="description">Cocktail fruité et pétillant à base de vodka, jus d’orange et cranberry</p>
-        <p class="price">14,90</p>
-        <div class="menu-image">
-            <img src="./image/Mojito.jpg" alt="Mojito">
-            <img src="./image/Pina-colada.jpg" alt="Pina Colada">
-            <img src="./image/Sex-beach.jpg" alt="Sex on the beach">
-        </div>
-        <div class="separator"></div>
-    </section>
-    
-    <section id="menu">
-        <h3>Nos Menus</h3>
-        <div id="menu-menu">
-            <div>
-                <h4>Menu Découverte</h4>
-                <p class="description">Entrée + Plat + Dessert</p>
-                <p class="price">35.20 €</p>
-            </div>
-            <div>
-                <h4>Menu Gourmet</h4>
-                <p class="description">Entrée + Plat + Dessert + Boisson</p>
-                <p class="price">44.10 €</p>
-            </div>
-        </div>
-        <div class="menu-image">
-            <img src="./image/Menu-section.webp" alt="Menu">
-        </div>
-        <div class="separator"></div>
-    </section>
-
-    <section id="entree">
-        <h3>Entrées</h3>
-        <h4>Salade Caprese</h4>
-        <p class="description">Tomates fraîches, mozzarella fondante et basilic, arrosées d’un filet d’huile d’olive</p>
-        <p class="price">15,40</p>
-        <h4>Tartare de saumon</h4>
-        <p class="description">Saumon frais finement coupé, relevé d’un zeste de citron et d’herbes</p>
-        <p class="price">17,60</p>
-        <h4>Bruschetta à l’italienne</h4>
-        <p class="description">Pain grillé croustillant garni de tomates, ail et basilic</p>
-        <p class="price">14,90</p>
-        <div class="menu-image">
-            <img src="./image/Salade-capresse.jpg" alt="Salade Caprese">
-            <img src="./image/Tartare-saumon.jpg" alt="Tartare de saumon">
-            <img src="./image/Bruschetta.jpg" alt="Bruschetta">
-        </div>
-        <div class="separator"></div>
-    </section>
-
-    <section id="plat">
-        <h3>Plats</h3>
-        <h4>Poulet rôti aux herbes</h4>
-        <p class="description">oulet tendre et doré, parfumé aux herbes fraîches, servi avec ses légumes de saison.</p>
-        <p class="price">24,40</p>
-        <h4>Pâtes aux champignons et crème</h4>
-        <p class="description">Pâtes al dente nappées d’une sauce crémeuse aux champignons</p>
-        <p class="price">19,60</p>
-        <h4>Filet de saumon grillé</h4>
-        <p class="description">Saumon délicatement grillé, accompagné d’un filet de citron et d’un bouquet de légumes croquants.</p>
-        <p class="price">22,90</p>
-        <div class="menu-image">
-            <img src="./image/Poulet-roti.jpg" alt="Poulet rôti aux herbes">
-            <img src="./image/Pâte-champignon.jpg" alt="Pâtes aux champignon">
-            <img src="./image/Saumon-grille.jpg" alt="Filet de saumon grillé">
-        </div>
-        <div class="separator"></div>
-    </section>
-
-    <section id="dessert">
-        <h3>Desserts</h3>
-        <h4>Tiramisu</h4>
-        <p class="description">Douceur italienne à base de mascarpone, café et cacao</p>
-        <p class="price">9,40</p>
-        <h4>Fondant au chocolat</h4>
-        <p class="description">Gâteau au cœur coulant de chocolat noir</p>
-        <p class="price">8,60</p>
-        <h4>Panna Cotta aux fruits rouges</h4>
-        <p class="description">Crème légère et veloutée, accompagnée de fruits rouges frais</p>
-        <p class="price">10,90</p>
-        <div class="menu-image">
-            <img src="./image/Tiramisu.jpg" alt="Tiramisu">
-            <img src="./image/Fondant-chocolat.jpg" alt="Fondant au chocolat">
-            <img src="./image/Panna-cota.jpg" alt="Panna Cotta aux fruits rouges">
-        </div>
-        <div class="separator"></div>
-    </section>
-    <h3 class="section-title">Menu Complet</h3>
-    <p class="menu-intro">
-        Découvrez notre menu complet avec toutes nos entrées, plats, desserts et boissons. 
-        Téléchargez-le pour le consulter à tout moment !
-    </p>
-    <div class="menu-pdf-button">
-        <a href="./image/menu-complet.pdf" target="_blank" class="btn-download">
-            📄 Télécharger le menu complet
-        </a>
-    </div>
-</section>
+  </section>
 
 
     
@@ -149,7 +56,7 @@
 
         <div class="footer-item">
             <i class="fa-solid fa-location-dot"></i>
-            <span>12 Rue des Saveurs, 75000 Paris</span>
+            <span>12 Rue de la plage, 14055 Paris</span>
         </div>
 
         <div class="footer-item">
@@ -171,7 +78,7 @@
     </div>
 
     <div class="footer-bottom">
-        <span>© 2026 Restaurant Le Délice</span>
+        <span>© 2026 Bistro Méditérranéen</span>
         <div>
             <a href="./mentions-legales.html">Mentions légales</a>
             <a href="./politique-confidentialite.html">Confidentialité</a>
