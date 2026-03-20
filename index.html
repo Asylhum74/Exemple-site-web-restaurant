@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Le Délice</title>
+  	<meta name="description" content="Restaurant Le Délice à Paris. Cuisine française maison, produits frais, 
+    ambiance chaleureuse. Réservez dès maintenant.">
+  	<link rel="icon" type="image/png" href="./image/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -37,40 +40,40 @@
 <section class="gallery">
     <div class="section-header">
         <p class="section-subtitle">Découvrez</p>
-        <h1>Notre Galerie</h1>
+        <h2>Notre Galerie</h2>
         <div class="title-separator"></div>
     </div>
 
     <div class="gallery-grid">
 
         <div class="gallery-card reveal">
-            <h3>Filet de Boeuf</h3>
-            <img src="./image/Repas-1.webp" alt="Filet de Boeuf">
+            <h3>Salade signature</h3>
+            <img src="./image/Repas-1.webp" alt="Salade signature">
         </div>
 
         <div class="gallery-card reveal">
-            <h3>Pâtes aux Truffes</h3>
-            <img src="./image/Repas-2.webp" alt="Pâtes aux Truffes">
+            <h3>Steak de boeuf</h3>
+            <img src="./image/Repas-2.webp" alt="Steak de boeuf">
         </div>
 
         <div class="gallery-card reveal">
-            <h3>Dessert Signature</h3>
-            <img src="./image/Repas-3.webp" alt="Dessert Signature">
+            <h3>Entrée Signature</h3>
+            <img src="./image/Repas-3.webp" alt="Entrée Signature">
         </div>
 
         <div class="gallery-card reveal">
-            <h3>Cocktail Maison</h3>
-            <img src="./image/Repas-4.webp" alt="Cocktail Maison">
+            <h3>Boeuf et ses asperges</h3>
+            <img src="./image/Repas-4.webp" alt="Boeuf et ses asperges">
         </div>
         
         <div class="gallery-card reveal">
-            <h3>Dessert</h3>
-            <img src="./image/Repas-5.webp" alt="Dessert">
+            <h3>Dessert Signature</h3>
+            <img src="./image/Repas-5.webp" alt="Dessert signature">
         </div>
 
         <div class="gallery-card reveal">
-            <h3>Poulet</h3>
-            <img src="./image/Repas-6.webp" alt="Poulet">
+            <h3>Blanc de Poulet et ses patates</h3>
+            <img src="./image/Repas-6.webp" alt="Blanc de Poulet et ses patates">
         </div>
 
     </div>
@@ -86,7 +89,7 @@
 <section class="events-section">
     <div class="section-header">
         <p class="section-subtitle">Découvrez</p>
-        <h1>Nos Événements</h1>
+        <h2>Nos Événements</h2>
         <div class="title-separator"></div>
     </div>
 
@@ -133,9 +136,8 @@
     <div class="footer-bottom">
         <span>© 2026 Restaurant Le Délice</span>
         <div>
-            <a href="#">Mentions légales</a>
-            <a href="#">Confidentialité</a>
-            <a href="#">Cookies</a>
+            <a href="./mentions-legales.php">Mentions légales</a>
+            <a href="./politique-confidentialite.php">Confidentialité</a>
         </div>
     </div>
 </footer>
@@ -169,7 +171,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const nextBtn = document.querySelector(".next");
     let currentIndex = 0;
 
-    fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vQRtyA7hxSS3oT_dH8_2PRI38In21lwZG6QbtD2p-ligE55tW7kS7MD8rzHaxDNG6T7QKpy53qMigHc/pub?gid=0&single=true&output=csv") // Remplace par ton URL Sheet2JSON
+    fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vQRtyA7hxSS3oT_dH8_2PRI38In21lwZG6QbtD2p-ligE55tW7kS7MD8rzHaxDNG6T7QKpy53qMigHc/pub?gid=0&single=true&output=csv") 
         .then(res => res.text())
         .then(csv => {
             const rows = csv.split("\n").slice(1);
