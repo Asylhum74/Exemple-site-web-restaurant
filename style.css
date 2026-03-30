@@ -223,6 +223,8 @@
       padding: 60px 10%;
       background-color: #FDF6E3;
       text-align: center;
+      display: flex;
+      align-item: center;
     }
     .about h2 {
       font-family: 'Pacifico', cursive;
@@ -241,8 +243,6 @@
       border-radius: 10px;
       max-width: 300px;
       min-width: 300px;
-      display: flex;
-      align-item: center;
     }
 
     /* ----------------- Contact ----------------- */
