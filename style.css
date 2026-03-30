@@ -28,11 +28,11 @@
 /* Footer */
 .footer {background: #0077B6; color: #fff; padding: 25px 40px; font-size: 14px; }
 .footer::before {content: ""; display: block; width: 200px; height: 2px; margin: 0 auto 30px auto;
-    background: linear-gradient(to right, transparent, #c59d5f, transparent );
+    background: linear-gradient(to right, transparent, #E9D8A6, transparent );
 }
 .footer-main {display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
 .footer-item {display: flex; align-items: center; gap: 8px; color: #ccc; }
-.footer-item i {color: #c59d5f; }
+.footer-item i {color: #E9D8A6; }
 .footer-socials a {color: #ccc; margin-left: 15px; font-size: 18px; transition: 0.3s; }
 .footer-socials a:hover {color: #c59d5f; transform: scale(1.2); }
 .footer-bottom {margin-top: 20px; padding-top: 15px; border-top: 1px solid #222; display: flex; justify-content: space-between; flex-wrap: wrap; color: #888;
@@ -239,8 +239,8 @@
     .about img {
       margin: 30px auto 0 auto;
       border-radius: 10px;
-      min-width: 400px;
-      min-height: 500px
+      min-width: 100px;
+      min-height: 200px
     }
 
     /* ----------------- Contact ----------------- */
