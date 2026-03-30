@@ -225,6 +225,8 @@
       text-align: center;
       display: flex;
       align-item: center;
+      flex-direction: column;
+      
     }
     .about h2 {
       font-family: 'Pacifico', cursive;
