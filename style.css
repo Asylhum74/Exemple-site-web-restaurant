@@ -121,16 +121,16 @@ section {
 }
 
 /* -------- FOOTER -------- */
-.footer {background: #0f0f0f; color: #fff; padding: 25px 40px; font-size: 14px; }
+.footer {background: #023047; color: #FDF6E3; padding: 25px 40px; font-size: 14px; }
 .footer::before {content: ""; display: block; width: 200px; height: 2px; margin: 0 auto 30px auto;
-    background: linear-gradient(to right, transparent, #c59d5f, transparent );
+    background: linear-gradient(to right, transparent, #FDF6E3, transparent );
 }
 .footer-main {display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
 .footer-item {display: flex; align-items: center; gap: 8px; color: #ccc; }
 .footer-item i {color: #c59d5f; }
 .footer-socials a {color: #ccc; margin-left: 15px; font-size: 18px; transition: 0.3s; }
 .footer-socials a:hover {color: #c59d5f; transform: scale(1.2); }
-.footer-bottom {margin-top: 20px; padding-top: 15px; border-top: 1px solid #222; display: flex; justify-content: space-between; flex-wrap: wrap; color: #888;
+.footer-bottom {margin-top: 20px; padding-top: 15px; border-top: 1px solid #222; display: flex; justify-content: space-between; flex-wrap: wrap; color: #023047;
     font-size: 12px; }
 .footer-bottom a {margin-left: 15px; color: #888; text-decoration: none; }
 .footer-bottom a:hover { color: #fff; }
