@@ -160,6 +160,7 @@
       color: #023047;
       font-size: 2.5em;
       margin-bottom: 40px;
+      text-align: center;
     }
     .contact-container {display: flex; gap: 50px; max-width: 1200px; margin: 50px auto; align-items: center; }
     .contact-info {flex: 1; }
