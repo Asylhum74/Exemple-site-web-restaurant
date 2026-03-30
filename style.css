@@ -64,6 +64,7 @@ section {
   animation: fadeUp 1s ease forwards;
   opacity: 0;
   transform: translateY(30px);
+  color: white;
 }
 
 /* Texte */
@@ -85,7 +86,7 @@ section {
 
 /* Bouton principal */
 .btn-primary {
-  background: #c59d5f;
+  background: #023047;
   color: white;
   padding: 12px 24px;
   border-radius: 30px;
