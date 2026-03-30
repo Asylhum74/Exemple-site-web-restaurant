@@ -84,6 +84,17 @@ section {
   flex-direction: row-reverse;
 }
 
+.fade-img {
+  opacity: 0;
+  transform: translateY(50px) scale(0.95);
+  transition: all 0.8s ease;
+}
+
+.fade-img.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
 /* -------- MENU SCROLL -------- */
 .menu {
   background: #fff;
