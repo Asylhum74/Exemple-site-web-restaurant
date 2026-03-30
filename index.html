@@ -51,7 +51,7 @@
 
 <!-- IMAGE AMBIANCE -->
 <section>
-  <div class="full-image fade-img"></div>
+  <div class="full-image"></div>
 </section>
 
 <!-- MENU -->
@@ -120,21 +120,6 @@
 </footer>
 
 <script>
-const images = document.querySelectorAll('.fade-img');
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
-  });
-}, {
-  threshold: 0.2
-});
-
-images.forEach(img => {
-  observer.observe(img);
-});
 
 const sections = document.querySelectorAll('.fade-section');
 
