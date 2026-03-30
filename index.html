@@ -23,8 +23,8 @@
 </section>
 
 <!-- SECTION 1 -->
-<section class="split">
-  <img class="fade-img" src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c">
+<section class="split fade-section">
+  <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c">
   <div class="split-text">
     <h2>Une cuisine authentique</h2>
     <p>Nos plats sont préparés avec des ingrédients frais inspirés des côtes méditerranéennes.</p>
@@ -32,8 +32,8 @@
 </section>
 
 <!-- SECTION 2 -->
-<section class="split reverse">
-  <img class="fade-img" src="https://images.unsplash.com/photo-1559339352-11d035aa65de">
+<section class="split reverse fade-section">
+  <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de">
   <div class="split-text">
     <h2>Un lieu chaleureux</h2>
     <p>Profitez d’une ambiance conviviale, entre amis ou en famille.</p>
@@ -41,8 +41,8 @@
 </section>
 
 <!-- SECTION 3 -->
-<section class="split">
-  <img class="fade-img" src="./image/equipe-restaurant .jpg">
+<section class="split fade-section">
+  <img src="./image/equipe-restaurant .jpg">
   <div class="split-text">
     <h2>Une équipe à votre écoute</h2>
     <p>Une équipe là pour répondre à vos besoin et vous proposer le meilleur des repas.</p>
@@ -134,6 +134,22 @@ const observer = new IntersectionObserver(entries => {
 
 images.forEach(img => {
   observer.observe(img);
+});
+
+const sections = document.querySelectorAll('.fade-section');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, {
+  threshold: 0.2
+});
+
+sections.forEach(section => {
+  observer.observe(section);
 });
 </script>
 
