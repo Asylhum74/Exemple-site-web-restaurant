@@ -35,10 +35,10 @@
 .footer-item i {color: #E9D8A6; }
 .footer-socials a {color: #ccc; margin-left: 15px; font-size: 18px; transition: 0.3s; }
 .footer-socials a:hover {color: #c59d5f; transform: scale(1.2); }
-.footer-bottom {margin-top: 20px; padding-top: 15px; border-top: 1px solid #222; display: flex; justify-content: space-between; flex-wrap: wrap; color: #888;
+.footer-bottom {margin-top: 20px; padding-top: 15px; border-top: 1px solid #222; display: flex; justify-content: space-between; flex-wrap: wrap; color: #E9D8A6;
     font-size: 12px; }
-.footer-bottom a {margin-left: 15px; color: #888; text-decoration: none; }
-.footer-bottom a:hover { color: #fff; }
+.footer-bottom a {margin-left: 15px; color: #E9D8A6; text-decoration: none; }
+.footer-bottom a:hover { color: #FFFFFF; }
 
 
 /* Mentions légale et confidentialité */
