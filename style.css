@@ -209,7 +209,7 @@ section {
   font-weight: bold;
 }
 
-.btn-download {display: inline-block; background-color: #FDF6E3; color: black; font-weight: 600; padding: 15px 30px; border-radius: 30px; text-decoration: none;
+.btn-download {display: inline-block; background-color: #FDF6E3; font-weight: 600; padding: 15px 30px; border-radius: 30px; text-decoration: none;
     font-size: 1.1rem; transition: transform 0.3s ease, box-shadow 0.3s ease; margin-top: 30px; }
 .btn-download:hover {transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.2); }
 .menu-pdf-button {text-align: center; }
