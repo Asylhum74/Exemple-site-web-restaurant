@@ -127,12 +127,12 @@ section {
 }
 .footer-main {display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
 .footer-item {display: flex; align-items: center; gap: 8px; color: #ccc; }
-.footer-item i {color: #c59d5f; }
+.footer-item i {color: #FDF6E3; }
 .footer-socials a {color: #ccc; margin-left: 15px; font-size: 18px; transition: 0.3s; }
-.footer-socials a:hover {color: #c59d5f; transform: scale(1.2); }
-.footer-bottom {margin-top: 20px; padding-top: 15px; border-top: 1px solid #222; display: flex; justify-content: space-between; flex-wrap: wrap; color: #023047;
+.footer-socials a:hover {color: #FDF6E3; transform: scale(1.2); }
+.footer-bottom {margin-top: 20px; padding-top: 15px; border-top: 1px solid #222; display: flex; justify-content: space-between; flex-wrap: wrap; color: #ccc;
     font-size: 12px; }
-.footer-bottom a {margin-left: 15px; color: #888; text-decoration: none; }
+.footer-bottom a {margin-left: 15px; color: #ccc; text-decoration: none; }
 .footer-bottom a:hover { color: #fff; }
 
 
