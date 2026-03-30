@@ -119,5 +119,23 @@
     </div>
 </footer>
 
+<script>
+const images = document.querySelectorAll('.fade-img');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, {
+  threshold: 0.2
+});
+
+images.forEach(img => {
+  observer.observe(img);
+});
+</script>
+
 </body>
 </html>
