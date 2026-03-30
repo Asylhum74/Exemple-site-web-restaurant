@@ -1,104 +1,224 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bistro Méditérranéen</title>
-  	<meta name="description" content="Bistro méditérranéen à Marseille. Cuisine française maison, produits frais, 
-    ambiance chaleureuse. Réservez dès maintenant.">
-  	<link rel="icon" type="image/png" href="./image/favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="./style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bistro Méditerranéen</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+
+<style>
+
+/* -------- GLOBAL -------- */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #FDF6E3;
+  color: #333;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  color: #023047;
+}
+
+section {
+  padding: 80px 10%;
+}
+
+/* -------- HERO -------- */
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  background: #0077B6;
+  border: none;
+  padding: 12px 25px;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background: #023047;
+}
+
+/* -------- SECTION SPLIT -------- */
+.split {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.split img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.split-text {
+  width: 50%;
+}
+
+/* inversion */
+.split.reverse {
+  flex-direction: row-reverse;
+}
+
+/* -------- MENU SCROLL -------- */
+.menu {
+  background: #fff;
+}
+
+.menu-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.menu-item {
+  min-width: 250px;
+  background: #FDF6E3;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.price {
+  color: #0077B6;
+  font-weight: bold;
+}
+
+/* -------- IMAGE FULL -------- */
+.full-image {
+  height: 400px;
+  background: url('https://images.unsplash.com/photo-1551218808-94e220e084d2') center/cover;
+  border-radius: 10px;
+}
+
+/* -------- FOOTER -------- */
+.footer {
+  background: #023047;
+  color: #FDF6E3;
+  text-align: center;
+  padding: 30px;
+}
+
+/* -------- RESPONSIVE -------- */
+@media (max-width: 900px) {
+  .split {
+    flex-direction: column;
+  }
+  .split img, .split-text {
+    width: 100%;
+  }
+}
+
+</style>
 </head>
+
 <body>
-  <!-- Header -->
-  <header>
-    <div class="logo">Bistro Méditerranéen</div>
-    <nav>
-      <a href="./index.html">Accueil</a>  
-      <a href="./menu.html">Menu</a>
-      <a href="./contact.html">Contact</a>
-      <a href="./contact.html" class="btn-reserve">Réserver</a>
-    </nav>
-  </header>
- <!-- Hero -->
-  <section class="hero">
-    <img src="./image/Plat-mediteranneen.jpg" alt="Plat Méditerranéen">
-    <div class="text">
-      <h1>Saveurs du soleil</h1>
-      <p>Ambiance conviviale et plats authentiques</p>
-      <a href="./menu.html" class="btn-reserve">Voir le menu</a>
-    </div>
-  </section>
 
- <!-- Menu -->
-  <section class="menu" id="menu">
-    <h2>Notre Menu</h2>
-    <div class="menu-cards">
-      <div class="card">
-        <img src="./image/Salade-grec.webp" alt="Salade grecque">
-        <h3>Salade grecque</h3>
-        <p>Tomates, concombre, feta, olives noires</p>
-        <div class="price">€9</div>
-      </div>
-      <div class="card">
-        <img src="./image/paella.webp" alt="Paella">
-        <h3>Paella</h3>
-        <p>Fruits de mer frais, riz safrané</p>
-        <div class="price">€18</div>
-      </div>
-      <div class="card">
-        <img src="./image/Tiramisu.webp" alt="Tiramisu">
-        <h3>Tiramisu</h3>
-        <p>Crémeux au mascarpone et café</p>
-        <div class="price">€7</div>
-      </div>
-    </div>
-  </section>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Évasion Méditerranéenne</h1>
+    <p>Des saveurs ensoleillées dans une ambiance unique</p>
+    <button>Découvrir le menu</button>
+  </div>
+</section>
 
-  <!-- À propos -->
-  <section class="about" id="about">
-    <h2>À propos de nous</h2>
-    <p>Bienvenue au Bistro Méditerranéen, un lieu où chaque plat est préparé avec amour et authenticité. Profitez d’une ambiance chaleureuse et ensoleillée, 
-    inspirée des saveurs de la Méditerranée.</p>
-    <img src="./image/equipe-restaurant .jpg" alt="Équipe du restaurant">
-  </section>
+<!-- SECTION 1 -->
+<section class="split">
+  <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c">
+  <div class="split-text">
+    <h2>Une cuisine authentique</h2>
+    <p>Nos plats sont préparés avec des ingrédients frais inspirés des côtes méditerranéennes.</p>
+  </div>
+</section>
+
+<!-- SECTION 2 -->
+<section class="split reverse">
+  <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de">
+  <div class="split-text">
+    <h2>Un lieu chaleureux</h2>
+    <p>Profitez d’une ambiance conviviale, entre amis ou en famille.</p>
+  </div>
+</section>
+
+<!-- IMAGE AMBIANCE -->
+<section>
+  <div class="full-image"></div>
+</section>
+
+<!-- MENU -->
+<section class="menu">
+  <h2>Notre sélection</h2>
+  <div class="menu-scroll">
     
-<!-- Footer -->
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+      <h3>Salade grecque</h3>
+      <p>Fraîcheur et saveurs</p>
+      <span class="price">9€</span>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141">
+      <h3>Paella</h3>
+      <p>Tradition espagnole</p>
+      <span class="price">18€</span>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f">
+      <h3>Tiramisu</h3>
+      <p>Douceur italienne</p>
+      <span class="price">7€</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer class="footer">
-    <div class="footer-main">
-
-        <div class="footer-item">
-            <i class="fa-solid fa-location-dot"></i>
-            <span>12 Rue de la plage, 13055 Marseille</span>
-        </div>
-
-        <div class="footer-item">
-            <i class="fa-solid fa-phone"></i>
-            <span>01 23 45 67 89</span>
-        </div>
-
-        <div class="footer-item">
-            <i class="fa-solid fa-clock"></i>
-            <span>Lun-Ven 12h-14h / 19h-22h</span>
-        </div>
-
-        <div class="footer-socials">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-        </div>
-
-    </div>
-
-    <div class="footer-bottom">
-        <span>© 2026 Bistrot Méditérranéen</span>
-        <div>
-            <a href="./mentions-legales.html">Mentions légales</a>
-            <a href="./politique-confidentialite.html">Confidentialité</a>
-        </div>
-    </div>
+  <p>© 2026 Bistro Méditerranéen - Tous droits réservés</p>
 </footer>
-    
+
 </body>
 </html>
