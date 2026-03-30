@@ -18,7 +18,7 @@ section {
 /* -------- HERO -------- */
 .hero {
   height: 100vh;
-  background: url('ton-image.jpg') center/cover no-repeat;
+  background: url('./image/Plat-mediteranneen.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
