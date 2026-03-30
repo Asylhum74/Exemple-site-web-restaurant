@@ -239,8 +239,8 @@
     .about img {
       margin: 30px auto 0 auto;
       border-radius: 10px;
-      max-width: 100px;
-      max-height: 200px
+      max-width: 400px;
+      max-height: 500px
     }
 
     /* ----------------- Contact ----------------- */
