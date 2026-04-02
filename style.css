@@ -293,4 +293,12 @@ section {
   .split img, .split-text {
     width: 100%;
   }
+  .menu-scroll {
+    /*flex: 0 0 45%; min-width: 100px;*/ 
+    overflow: hidden; overflow-x: auto; display: flex; 
+  }
 }
+
+
+
+
