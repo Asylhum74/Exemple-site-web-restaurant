@@ -254,7 +254,8 @@ section {
 
 /* -------- RESPONSIVE -------- */
 @media (max-width: 900px) {
-  .split {
+  .split,
+  .split.reverse {
     flex-direction: column;
   }
   .split img, .split-text {
