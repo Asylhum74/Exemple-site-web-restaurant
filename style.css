@@ -263,9 +263,6 @@ section {
   .menu-scroll {
     overflow: hidden; overflow-x: auto; display: flex; 
   }
-  .split.reverse {
-    flex-direction: row;
-  }
 }
 
 
